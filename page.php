@@ -14,6 +14,7 @@ get_header(); ?>
 
 <div class="container">
   <div class="sport_innerpage_area">
+      <?php if (!is_front_page()) { ?>
          <section class="sport_innerpage_content_wrapper <?php if( get_theme_mod( 'sports_club_lite_removesidebar_from_pages' ) ) { ?>fullwidth<?php } ?>">               
                 <?php while( have_posts() ) : the_post(); ?>                               
                     <?php get_template_part( 'content', 'page' ); ?>
@@ -24,6 +25,7 @@ get_header(); ?>
                         ?>                               
                 <?php endwhile; ?>                     
         </section><!-- section-->   
+      <?php } ?>
       <?php if( get_theme_mod( 'sports_club_lite_removesidebar_from_pages' ) == '') { ?> 
           	<?php get_sidebar();?>
       <?php } ?>      
