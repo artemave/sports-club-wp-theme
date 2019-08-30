@@ -123,7 +123,7 @@ if($sports_club_lite_showslider_sections != '') {
 <div id="slider" class="nivoSlider">
 <?php 
 $i=1;
-$slidequery = new WP_Query( array( 'post_type' => 'page', 'post__in' => $slider_Arr, 'orderby' => 'post__in' ) );
+$slidequery = new WP_Query( array( 'post_type' => 'page', 'post__in' => $slider_Arr, 'orderby' => 'post__in', 'posts_per_page' => 3 ) );
 while( $slidequery->have_posts() ) : $slidequery->the_post();
 $image = wp_get_attachment_url( get_post_thumbnail_id($post->ID)); 
 $thumbnail_id = get_post_thumbnail_id( $post->ID );
