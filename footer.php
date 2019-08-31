@@ -41,15 +41,13 @@
             <div class="container">
                 <div class="wp_powerd_by">
 				  <?php bloginfo('name'); ?> | 
-                  <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'sports-club-lite' ) ); ?>">
-				     <?php
-				         /* translators: %s: WordPress. */
-				          printf( __( 'Proudly Powered by %s.', 'sports-club-lite' ), 'WordPress' );
-				     ?>
-			       </a>                 
+                  <a href="<?php echo esc_url( 'https://featurist.io'  ); ?>">
+Developed &amp; sponsored by Featurist
+                  </a>
                 </div>
                         	
                 <div class="gt_design_by">				
+                  Wordpress | 
                   <a href="<?php echo esc_url( __( 'https://gracethemes.com/themes/free-sports-league-wordpress-theme/', 'sports-club-lite' ) ); ?>" target="_blank">
 				    <?php printf( __( 'Theme by %s', 'sports-club-lite' ), 'Grace Themes' ); ?>
                   </a>
