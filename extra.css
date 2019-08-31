@@ -2,3 +2,13 @@
 	float: none;
 	margin: auto;
 }
+
+@media only screen and (max-width: 960px) {
+  .header_right {
+  	display: flex;
+  }
+	.header_right .contactinfo {
+		display: flex;
+		align-items: center;
+	}
+}
